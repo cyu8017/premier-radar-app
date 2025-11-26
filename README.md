@@ -2,14 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Deploying to GitHub Pages
+## Deploying to GitHub Pages (no Actions)
 
-The repo is configured to publish the built app to GitHub Pages via Actions.
+Serve the static build from the `docs` folder on `main`:
 
-- The production base path is set to `https://cyu8017.github.io/premiere-radar` in `package.json` (`homepage`). If you fork or rename the repo, update that value to match your GitHub Pages URL.
-- On every push to `main` (or when manually triggered via "Run workflow"), the workflow at `.github/workflows/deploy.yml` runs `npm ci`, builds the app, and deploys the `build` output to the Pages site.
-- In the GitHub repo settings, set Pages → Source to "GitHub Actions" if it is not already.
-- To verify locally before pushing, run `npm run build` and open `build/index.html`.
+- Build for Pages: `npm run build:pages` (runs the normal build, clears `docs`, and copies the build output there).
+- Commit and push the updated `docs` folder.
+- In GitHub repo settings, set Pages → Source to `main` and folder to `/docs`.
+- The production base path is set to `https://cyu8017.github.io/premiere-radar` in `package.json` (`homepage`). Update it if the repo URL changes.
+
+If you prefer deploying from a dedicated branch instead, build locally and push the contents of `build/` to a `gh-pages` branch, then set Pages to that branch.
 
 ## Available Scripts
 
