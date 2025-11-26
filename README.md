@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deploying to GitHub Pages
+
+The repo is configured to publish the built app to GitHub Pages via Actions.
+
+- The production base path is set to `https://cyu8017.github.io/premiere-radar` in `package.json` (`homepage`). If you fork or rename the repo, update that value to match your GitHub Pages URL.
+- On every push to `main` (or when manually triggered via "Run workflow"), the workflow at `.github/workflows/deploy.yml` runs `npm ci`, builds the app, and deploys the `build` output to the Pages site.
+- In the GitHub repo settings, set Pages → Source to "GitHub Actions" if it is not already.
+- To verify locally before pushing, run `npm run build` and open `build/index.html`.
+
 ## Available Scripts
 
 In the project directory, you can run:
