@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/premiere-radar/static/css/main.ca791e4b.css",
+    "main.js": "/premiere-radar/static/js/main.5fc36263.js",
+    "index.html": "/premiere-radar/index.html",
+    "main.ca791e4b.css.map": "/premiere-radar/static/css/main.ca791e4b.css.map",
+    "main.5fc36263.js.map": "/premiere-radar/static/js/main.5fc36263.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca791e4b.css",
+    "static/js/main.5fc36263.js"
+  ]
+}
