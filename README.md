@@ -9,9 +9,11 @@ Serve the static build from the `docs` folder on `main`:
 - Build for Pages: `npm run build:pages` (runs the normal build, clears `docs`, and copies the build output there).
 - Commit and push the updated `docs` folder.
 - In GitHub repo settings, set Pages → Source to `main` and folder to `/docs`.
-- The production base path is set to `https://cyu8017.github.io/premiere-radar` in `package.json` (`homepage`). Update it if the repo URL changes.
+- The production base path is set to `https://cyu8017.github.io/premier-radar-app` in `package.json` (`homepage`). Update it if the repo URL changes.
 
 If you prefer deploying from a dedicated branch instead, build locally and push the contents of `build/` to a `gh-pages` branch, then set Pages to that branch.
+
+If you see 404s for `main.*.js` or `manifest.json` on GitHub Pages, make sure the `homepage` matches the actual repo Pages URL (e.g., `https://<user>.github.io/premier-radar-app`) and rebuild with `npm run build:pages` before pushing.
 
 ## Available Scripts
 

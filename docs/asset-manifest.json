@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/premiere-radar/static/css/main.ca791e4b.css",
-    "main.js": "/premiere-radar/static/js/main.5fc36263.js",
-    "index.html": "/premiere-radar/index.html",
-    "main.ca791e4b.css.map": "/premiere-radar/static/css/main.ca791e4b.css.map",
-    "main.5fc36263.js.map": "/premiere-radar/static/js/main.5fc36263.js.map"
+    "main.css": "/premier-radar-app/static/css/main.ca791e4b.css",
+    "main.js": "/premier-radar-app/static/js/main.0e855220.js",
+    "index.html": "/premier-radar-app/index.html",
+    "main.ca791e4b.css.map": "/premier-radar-app/static/css/main.ca791e4b.css.map",
+    "main.0e855220.js.map": "/premier-radar-app/static/js/main.0e855220.js.map"
   },
   "entrypoints": [
     "static/css/main.ca791e4b.css",
-    "static/js/main.5fc36263.js"
+    "static/js/main.0e855220.js"
   ]
 }
